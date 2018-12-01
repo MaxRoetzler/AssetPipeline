@@ -1,0 +1,567 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12e98fc5162a7a541abb9d6999239e4f, type: 3}
+  m_Name: AssetPipelineData
+  m_EditorClassIdentifier: 
+  m_ModelDefinitions: []
+  m_TextureDefinitions: []
+  m_AudioDefinitions: []
+--- !u!114 &114051542216193722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c453b64b96a130248943c04e5b637179, type: 3}
+  m_Name: New Definition
+  m_EditorClassIdentifier: 
+  m_Filters:
+    m_NameFilter:
+      m_State: 0
+      m_Value: 
+    m_PathFilter:
+      m_State: 0
+      m_Value: 
+    m_TypeFilter:
+      m_State: 0
+      m_Value: .*
+  m_Template: {fileID: 114946951650229926}
+  m_Settings:
+    m_KeepQuads:
+      m_State: 1
+      m_Value: 1
+    m_IsReadable:
+      m_State: 1
+      m_Value: 0
+    m_OptmizeMesh:
+      m_State: 1
+      m_Value: 1
+    m_WeldVertices:
+      m_State: 0
+      m_Value: 1
+    m_ImportLights:
+      m_State: 0
+      m_Value: 0
+    m_UseFileScale:
+      m_State: 1
+      m_Value: 1
+    m_ImportCameras:
+      m_State: 0
+      m_Value: 0
+    m_SwapUVChannels:
+      m_State: 0
+      m_Value: 0
+    m_ImportVisibility:
+      m_State: 0
+      m_Value: 0
+    m_ImportBlendShapes:
+      m_State: 1
+      m_Value: 0
+    m_GenerateColliders:
+      m_State: 1
+      m_Value: 0
+    m_PreserveHierarchy:
+      m_State: 0
+      m_Value: 0
+    m_MeshCompression:
+      m_State: 1
+      m_Value: 0
+    m_IndexFormat:
+      m_State: 1
+      m_Value: 0
+    m_ScaleFactor:
+      m_State: 1
+      m_Value: 1
+    m_GenerateSecondaryUV:
+      m_State: 1
+      m_Value: 1
+    m_HardAngle:
+      m_State: 1
+      m_Value: 88
+    m_PackMargin:
+      m_State: 0
+      m_Value: 4
+    m_AngleDistortion:
+      m_State: 0
+      m_Value: 8
+    m_AreaDistortion:
+      m_State: 0
+      m_Value: 15
+    m_ImportNormals:
+      m_State: 0
+      m_Value: 0
+    m_ImportTangents:
+      m_State: 0
+      m_Value: 3
+    m_NormalCalculationMode:
+      m_State: 0
+      m_Value: 1
+    m_NormalSmoothingAngle:
+      m_State: 0
+      m_Value: 0
+    m_AnimationType:
+      m_State: 0
+      m_Value: 0
+    m_GenerateAnimations:
+      m_State: 0
+      m_Value: 0
+    m_AnimationCompression:
+      m_State: 0
+      m_Value: 0
+    m_BakeIK:
+      m_State: 0
+      m_Value: 0
+    m_ImportAnimation:
+      m_State: 0
+      m_Value: 0
+    m_ImportConstraints:
+      m_State: 0
+      m_Value: 0
+    m_ImportMaterials:
+      m_State: 0
+      m_Value: 1
+    m_MaterialName:
+      m_State: 0
+      m_Value: 0
+    m_MaterialSearch:
+      m_State: 0
+      m_Value: 0
+    m_MaterialLocation:
+      m_State: 0
+      m_Value: 1
+--- !u!114 &114414644824539940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35065972cccd7c349b7add3275719fd0, type: 3}
+  m_Name: Default
+  m_EditorClassIdentifier: 
+  m_Filters:
+    m_NameFilter:
+      m_State: 0
+      m_Value: 
+    m_PathFilter:
+      m_State: 0
+      m_Value: 
+    m_TypeFilter:
+      m_State: 0
+      m_Value: .*
+  m_Template: {fileID: 114414644824539940}
+  m_Settings:
+    m_ForceToMono:
+      m_State: 0
+      m_Value: 0
+    m_LoadInBackground:
+      m_State: 0
+      m_Value: 0
+    m_Ambisonic:
+      m_State: 0
+      m_Value: 0
+    m_SampleSettings:
+    - m_Quality:
+        m_State: 0
+        m_Value: 0.15
+      m_SampleRateSetting:
+        m_State: 0
+        m_Value: 0
+      m_SampleRateOverride:
+        m_State: 0
+        m_Value: 0
+      m_CompressionFormat:
+        m_State: 0
+        m_Value: 0
+      m_PreloadAudioData:
+        m_State: 0
+        m_Value: 0
+    - m_Quality:
+        m_State: 0
+        m_Value: 2
+      m_SampleRateSetting:
+        m_State: 0
+        m_Value: 0
+      m_SampleRateOverride:
+        m_State: 0
+        m_Value: 0
+      m_CompressionFormat:
+        m_State: 0
+        m_Value: 0
+      m_PreloadAudioData:
+        m_State: 0
+        m_Value: 0
+    - m_Quality:
+        m_State: 0
+        m_Value: 5
+      m_SampleRateSetting:
+        m_State: 0
+        m_Value: 0
+      m_SampleRateOverride:
+        m_State: 0
+        m_Value: 0
+      m_CompressionFormat:
+        m_State: 0
+        m_Value: 0
+      m_PreloadAudioData:
+        m_State: 0
+        m_Value: 0
+    - m_Quality:
+        m_State: 0
+        m_Value: 0
+      m_SampleRateSetting:
+        m_State: 0
+        m_Value: 0
+      m_SampleRateOverride:
+        m_State: 0
+        m_Value: 0
+      m_CompressionFormat:
+        m_State: 0
+        m_Value: 0
+      m_PreloadAudioData:
+        m_State: 0
+        m_Value: 0
+    - m_Quality:
+        m_State: 0
+        m_Value: 0
+      m_SampleRateSetting:
+        m_State: 0
+        m_Value: 0
+      m_SampleRateOverride:
+        m_State: 0
+        m_Value: 0
+      m_CompressionFormat:
+        m_State: 0
+        m_Value: 0
+      m_PreloadAudioData:
+        m_State: 0
+        m_Value: 0
+    - m_Quality:
+        m_State: 0
+        m_Value: 0
+      m_SampleRateSetting:
+        m_State: 0
+        m_Value: 0
+      m_SampleRateOverride:
+        m_State: 0
+        m_Value: 0
+      m_CompressionFormat:
+        m_State: 0
+        m_Value: 0
+      m_PreloadAudioData:
+        m_State: 0
+        m_Value: 0
+--- !u!114 &114518842288340586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adfea352ca3088744b258a69bfdc9956, type: 3}
+  m_Name: New Definition
+  m_EditorClassIdentifier: 
+  m_Filters:
+    m_NameFilter:
+      m_State: 0
+      m_Value: 
+    m_PathFilter:
+      m_State: 0
+      m_Value: 
+    m_TypeFilter:
+      m_State: 0
+      m_Value: .*
+  m_Template: {fileID: 114704639399245552}
+  m_Settings:
+    m_TextureType:
+      m_State: 0
+      m_Value: 0
+    m_TextureShape:
+      m_State: 0
+      m_Value: 0
+    m_SRGBTexture:
+      m_State: 0
+      m_Value: 1
+    m_AlphaSource:
+      m_State: 0
+      m_Value: 0
+    m_AlphaIsTransparency:
+      m_State: 0
+      m_Value: 0
+    m_NpotScale:
+      m_State: 0
+      m_Value: 1
+    m_IsReadable:
+      m_State: 0
+      m_Value: 0
+    m_MipmapEnabled:
+      m_State: 0
+      m_Value: 1
+    m_BorderMipmap:
+      m_State: 0
+      m_Value: 1
+    m_MipmapFilter:
+      m_State: 0
+      m_Value: 0
+    m_MipMapsPreserveCoverage:
+      m_State: 0
+      m_Value: 0
+    m_Fadeout:
+      m_State: 0
+      m_Value: 0
+    m_MipmapFadeDistanceStart:
+      m_State: 0
+      m_Value: 2
+    m_MipmapFadeDistanceEnd:
+      m_State: 0
+      m_Value: 5
+    m_ConvertToNormalmap:
+      m_State: 0
+      m_Value: 0
+    m_SpriteImportMode:
+      m_State: 0
+      m_Value: 1
+    m_SpritePackingTag:
+      m_State: 0
+      m_Value: 
+    m_SpritePixelsPerUnit:
+      m_State: 0
+      m_Value: 100
+    m_GenerateCubemap:
+      m_State: 0
+      m_Value: 6
+    m_WrapMode:
+      m_State: 0
+      m_Value: 0
+    m_FilterMode:
+      m_State: 0
+      m_Value: 1
+    m_AnisoLevel:
+      m_State: 0
+      m_Value: 1
+--- !u!114 &114704639399245552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adfea352ca3088744b258a69bfdc9956, type: 3}
+  m_Name: Default
+  m_EditorClassIdentifier: 
+  m_Filters:
+    m_NameFilter:
+      m_State: 0
+      m_Value: 
+    m_PathFilter:
+      m_State: 0
+      m_Value: 
+    m_TypeFilter:
+      m_State: 0
+      m_Value: .*
+  m_Template: {fileID: 114704639399245552}
+  m_Settings:
+    m_TextureType:
+      m_State: 0
+      m_Value: 0
+    m_TextureShape:
+      m_State: 0
+      m_Value: 0
+    m_SRGBTexture:
+      m_State: 0
+      m_Value: 1
+    m_AlphaSource:
+      m_State: 0
+      m_Value: 0
+    m_AlphaIsTransparency:
+      m_State: 0
+      m_Value: 0
+    m_NpotScale:
+      m_State: 0
+      m_Value: 1
+    m_IsReadable:
+      m_State: 0
+      m_Value: 0
+    m_MipmapEnabled:
+      m_State: 0
+      m_Value: 1
+    m_BorderMipmap:
+      m_State: 0
+      m_Value: 1
+    m_MipmapFilter:
+      m_State: 0
+      m_Value: 0
+    m_MipMapsPreserveCoverage:
+      m_State: 0
+      m_Value: 0
+    m_Fadeout:
+      m_State: 0
+      m_Value: 0
+    m_MipmapFadeDistanceStart:
+      m_State: 0
+      m_Value: 2
+    m_MipmapFadeDistanceEnd:
+      m_State: 0
+      m_Value: 5
+    m_ConvertToNormalmap:
+      m_State: 0
+      m_Value: 0
+    m_SpriteImportMode:
+      m_State: 0
+      m_Value: 1
+    m_SpritePackingTag:
+      m_State: 0
+      m_Value: 
+    m_SpritePixelsPerUnit:
+      m_State: 0
+      m_Value: 100
+    m_GenerateCubemap:
+      m_State: 0
+      m_Value: 6
+    m_WrapMode:
+      m_State: 0
+      m_Value: 0
+    m_FilterMode:
+      m_State: 0
+      m_Value: 1
+    m_AnisoLevel:
+      m_State: 0
+      m_Value: 1
+--- !u!114 &114946951650229926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c453b64b96a130248943c04e5b637179, type: 3}
+  m_Name: Default
+  m_EditorClassIdentifier: 
+  m_Filters:
+    m_NameFilter:
+      m_State: 0
+      m_Value: 
+    m_PathFilter:
+      m_State: 0
+      m_Value: 
+    m_TypeFilter:
+      m_State: 0
+      m_Value: .*
+  m_Template: {fileID: 114946951650229926}
+  m_Settings:
+    m_KeepQuads:
+      m_State: 0
+      m_Value: 0
+    m_IsReadable:
+      m_State: 0
+      m_Value: 0
+    m_OptmizeMesh:
+      m_State: 0
+      m_Value: 1
+    m_WeldVertices:
+      m_State: 0
+      m_Value: 1
+    m_ImportLights:
+      m_State: 0
+      m_Value: 0
+    m_UseFileScale:
+      m_State: 0
+      m_Value: 1
+    m_ImportCameras:
+      m_State: 0
+      m_Value: 0
+    m_SwapUVChannels:
+      m_State: 0
+      m_Value: 0
+    m_ImportVisibility:
+      m_State: 0
+      m_Value: 0
+    m_ImportBlendShapes:
+      m_State: 0
+      m_Value: 0
+    m_GenerateColliders:
+      m_State: 0
+      m_Value: 0
+    m_PreserveHierarchy:
+      m_State: 0
+      m_Value: 0
+    m_MeshCompression:
+      m_State: 0
+      m_Value: 0
+    m_IndexFormat:
+      m_State: 0
+      m_Value: 0
+    m_ScaleFactor:
+      m_State: 0
+      m_Value: 1
+    m_GenerateSecondaryUV:
+      m_State: 0
+      m_Value: 1
+    m_HardAngle:
+      m_State: 0
+      m_Value: 88
+    m_PackMargin:
+      m_State: 0
+      m_Value: 4
+    m_AngleDistortion:
+      m_State: 0
+      m_Value: 8
+    m_AreaDistortion:
+      m_State: 0
+      m_Value: 15
+    m_ImportNormals:
+      m_State: 0
+      m_Value: 0
+    m_ImportTangents:
+      m_State: 0
+      m_Value: 3
+    m_NormalCalculationMode:
+      m_State: 0
+      m_Value: 1
+    m_NormalSmoothingAngle:
+      m_State: 0
+      m_Value: 0
+    m_AnimationType:
+      m_State: 0
+      m_Value: 0
+    m_GenerateAnimations:
+      m_State: 0
+      m_Value: 0
+    m_AnimationCompression:
+      m_State: 0
+      m_Value: 0
+    m_BakeIK:
+      m_State: 0
+      m_Value: 0
+    m_ImportAnimation:
+      m_State: 0
+      m_Value: 0
+    m_ImportConstraints:
+      m_State: 0
+      m_Value: 0
+    m_ImportMaterials:
+      m_State: 0
+      m_Value: 0
+    m_MaterialName:
+      m_State: 0
+      m_Value: 0
+    m_MaterialSearch:
+      m_State: 0
+      m_Value: 0
+    m_MaterialLocation:
+      m_State: 0
+      m_Value: 1
