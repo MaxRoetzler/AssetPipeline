@@ -14,12 +14,14 @@ namespace MaxRoetzler.Extensions
 		{
 			Rect rect = DrawLabel (tuple);
 			EditorGUI.PropertyField (rect, tuple.Property, GUIContent.none);
+			GUI.enabled = true;
 		}
 
 		public static bool DrawToggle (ParameterOverrideTuple tuple)
 		{
 			Rect rect = DrawLabel (tuple);
 			EditorGUI.PropertyField (rect, tuple.Property, GUIContent.none);
+			GUI.enabled = true;
 
 			return tuple.BoolValue;
 		}
@@ -30,6 +32,7 @@ namespace MaxRoetzler.Extensions
 			string [] options = Enum.GetNames (type);
 
 			tuple.IntValue = EditorGUI.Popup (rect, string.Empty, tuple.IntValue, options);
+			GUI.enabled = true;
 
 			return tuple.IntValue;
 		}
@@ -38,6 +41,7 @@ namespace MaxRoetzler.Extensions
 		{
 			Rect rect = DrawLabel (tuple);
 			tuple.IntValue = EditorGUI.IntPopup (rect, string.Empty, tuple.IntValue, options, values);
+			GUI.enabled = true;
 
 			return tuple.IntValue;
 		}
@@ -46,6 +50,7 @@ namespace MaxRoetzler.Extensions
 		{
 			Rect rect = DrawLabel (tuple);
 			tuple.FloatValue = EditorGUI.Slider (rect, GUIContent.none, tuple.FloatValue, min, max);
+			GUI.enabled = true;
 
 			return tuple.FloatValue;
 		}
@@ -60,24 +65,34 @@ namespace MaxRoetzler.Extensions
 
 		private static Rect DrawLabel (ParameterOverrideTuple tuple)
 		{
-			GUI.enabled = true;
+			int indentLevel = EditorGUI.indentLevel;
+			EditorGUI.indentLevel = 0;
 
 			Rect rect = EditorGUILayout.GetControlRect ();
-			Rect rectLabel = new Rect (rect.x, rect.y, rect.width * k_LabelWidth, rect.height);
-			Rect rectField = new Rect (rect.x + rect.width * k_LabelWidth, rect.y, rect.width * k_FieldWidth, rect.height);
+			Rect rectField = rect;
+
+			GUI.enabled = true;
 
 			if (tuple.IsOverridable)
 			{
 				rect.width = k_Toggle;
 				tuple.State = EditorGUI.Toggle (rect, GUIContent.none, tuple.State, EditorStyles.radioButton);
-				rectLabel.width -= k_Toggle;
-				rectLabel.x += k_Toggle;
+
+				rect.x += k_Toggle;
+				rect.width -= k_Toggle;
+
 				GUI.enabled = tuple.State;
 			}
 
-			rectLabel = EditorGUI.IndentedRect (rectLabel);
-			EditorGUI.LabelField (rectLabel, tuple.Label);
+			rect.width = rectField.width * k_LabelWidth;
+			rectField.x += rectField.width * k_LabelWidth;
+			rectField.width *= k_FieldWidth;
+
+			EditorGUI.indentLevel = indentLevel;
+			EditorGUI.LabelField (rect, tuple.Label);
+
 			return rectField;
 		}
 	}
 }
+ 

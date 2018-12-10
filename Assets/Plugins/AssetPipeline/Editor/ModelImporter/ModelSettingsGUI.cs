@@ -32,7 +32,7 @@ namespace MaxRoetzler.AssetPipeline
 
 			if (ParameterOverrideGUI.DrawToggle (m_Iterator.Select ("m_GenerateSecondaryUV")))
 			{
-				EditorGUI.indentLevel += 1;
+				EditorGUI.indentLevel = 1;
 				m_AdvancedUVSettings = EditorGUILayout.Foldout (m_AdvancedUVSettings, "Advanced");
 
 				if (m_AdvancedUVSettings)
@@ -43,7 +43,7 @@ namespace MaxRoetzler.AssetPipeline
 					ParameterOverrideGUI.DrawSlider (m_Iterator.Select ("m_AreaDistortion"), 1, 75);
 				}
 
-				EditorGUI.indentLevel -= 1;
+				EditorGUI.indentLevel = 0;
 			}
 			#endregion
 
@@ -63,11 +63,11 @@ namespace MaxRoetzler.AssetPipeline
 			ParameterOverrideGUI.DrawTitle ("Materials");
 			if (ParameterOverrideGUI.DrawToggle (m_Iterator.Select ("m_ImportMaterials")))
 			{
-				EditorGUI.indentLevel += 1;
+				EditorGUI.indentLevel = 1;
 				ParameterOverrideGUI.DrawEnum (m_Iterator.Select ("m_MaterialName"), typeof (ModelImporterMaterialName));
 				ParameterOverrideGUI.DrawEnum (m_Iterator.Select ("m_MaterialSearch"), typeof (ModelImporterMaterialName));
 				ParameterOverrideGUI.DrawEnum (m_Iterator.Select ("m_MaterialLocation"), typeof (ModelImporterMaterialName));
-				EditorGUI.indentLevel -= 1;
+				EditorGUI.indentLevel = 0;
 			}
 			#endregion
 
@@ -78,11 +78,11 @@ namespace MaxRoetzler.AssetPipeline
 
 			if (ParameterOverrideGUI.DrawToggle (m_Iterator.Select ("m_ImportAnimation")))
 			{
-				EditorGUI.indentLevel += 1;
+				EditorGUI.indentLevel = 1;
 				ParameterOverrideGUI.DrawGeneric (m_Iterator.Select ("m_BakeIK"));
 				ParameterOverrideGUI.DrawEnum (m_Iterator.Select ("m_GenerateAnimations"), typeof (ModelImporterGenerateAnimations));
 				ParameterOverrideGUI.DrawEnum (m_Iterator.Select ("m_AnimationCompression"), typeof (ModelImporterAnimationCompression));
-				EditorGUI.indentLevel -= 1;
+				EditorGUI.indentLevel = 0;
 			}
 			#endregion
 		}
